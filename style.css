@@ -1,0 +1,178 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#020617;
+overflow-x:hidden;
+}
+
+.skill-radar-section{
+min-height:100vh;
+padding:100px 20px;
+position:relative;
+overflow:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.blur{
+position:absolute;
+border-radius:50%;
+filter:blur(120px);
+}
+
+.blur1{
+width:350px;
+height:350px;
+background:#3b82f6;
+top:-100px;
+left:-100px;
+opacity:.3;
+}
+
+.blur2{
+width:350px;
+height:350px;
+background:#8b5cf6;
+bottom:-100px;
+right:-100px;
+opacity:.3;
+}
+
+.container{
+max-width:1200px;
+width:100%;
+z-index:10;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title span{
+color:#60a5fa;
+letter-spacing:3px;
+font-size:.9rem;
+}
+
+.section-title h1{
+color:white;
+font-size:3rem;
+margin:15px 0;
+}
+
+.section-title p{
+color:#94a3b8;
+}
+
+.card{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.1);
+
+padding:50px;
+
+border-radius:30px;
+
+box-shadow:
+0 0 40px rgba(59,130,246,.2),
+0 0 80px rgba(139,92,246,.1);
+
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.left{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.right{
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+.skill-info{
+display:flex;
+justify-content:space-between;
+color:white;
+margin-bottom:10px;
+}
+
+.progress{
+height:12px;
+background:#0f172a;
+border-radius:50px;
+overflow:hidden;
+}
+
+.fill{
+height:100%;
+width:0;
+border-radius:50px;
+}
+
+.react{
+background:linear-gradient(90deg,#06b6d4,#3b82f6);
+animation:react 2s forwards;
+}
+
+.node{
+background:linear-gradient(90deg,#22c55e,#16a34a);
+animation:node 2s forwards;
+}
+
+.php{
+background:linear-gradient(90deg,#6366f1,#8b5cf6);
+animation:php 2s forwards;
+}
+
+.laravel{
+background:linear-gradient(90deg,#ef4444,#f97316);
+animation:laravel 2s forwards;
+}
+
+.mysql{
+background:linear-gradient(90deg,#0ea5e9,#38bdf8);
+animation:mysql 2s forwards;
+}
+
+.ui{
+background:linear-gradient(90deg,#ec4899,#d946ef);
+animation:ui 2s forwards;
+}
+
+@keyframes react{to{width:95%;}}
+@keyframes node{to{width:90%;}}
+@keyframes php{to{width:92%;}}
+@keyframes laravel{to{width:88%;}}
+@keyframes mysql{to{width:90%;}}
+@keyframes ui{to{width:85%;}}
+
+@media(max-width:900px){
+
+.card{
+grid-template-columns:1fr;
+}
+
+.section-title h1{
+font-size:2rem;
+}
+
+}

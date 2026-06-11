@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Skill Radar</title>
+
+```
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+```
+
+</head>
+<body>
+
+<section class="skill-radar-section">
+
+```
+<div class="blur blur1"></div>
+<div class="blur blur2"></div>
+
+<div class="container">
+
+    <div class="section-title">
+        <span>MY EXPERTISE</span>
+        <h1>🧑‍💻 Developer Skill Radar</h1>
+        <p>
+            Technologies and tools I use to build modern web applications.
+        </p>
+    </div>
+
+    <div class="card">
+
+        <div class="left">
+            <canvas id="skillRadar"></canvas>
+        </div>
+
+        <div class="right">
+
+            <div class="skill">
+                <div class="skill-info">
+                    <span>React.js</span>
+                    <span class="counter" data-target="95">0%</span>
+                </div>
+
+                <div class="progress">
+                    <div class="fill react"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-info">
+                    <span>Node.js</span>
+                    <span class="counter" data-target="90">0%</span>
+                </div>
+
+                <div class="progress">
+                    <div class="fill node"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-info">
+                    <span>PHP</span>
+                    <span class="counter" data-target="92">0%</span>
+                </div>
+
+                <div class="progress">
+                    <div class="fill php"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-info">
+                    <span>Laravel</span>
+                    <span class="counter" data-target="88">0%</span>
+                </div>
+
+                <div class="progress">
+                    <div class="fill laravel"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-info">
+                    <span>MySQL</span>
+                    <span class="counter" data-target="90">0%</span>
+                </div>
+
+                <div class="progress">
+                    <div class="fill mysql"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-info">
+                    <span>UI / UX</span>
+                    <span class="counter" data-target="85">0%</span>
+                </div>
+
+                <div class="progress">
+                    <div class="fill ui"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
